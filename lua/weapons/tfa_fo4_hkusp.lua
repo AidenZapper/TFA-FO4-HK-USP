@@ -203,11 +203,6 @@ SWEP.SequenceRateOverride       = {
 
 }
 
-SWEP.Attachments = {
-   [1] = {atts = {"fo4_hkusp_skin_tan", "fo4_hkusp_skin_green", "fo4_hkusp_skin_fde", "fo4_hkusp_skin_inox", "fo4_hkusp_skin_cobalt"}},
-   [4] = {atts = {"am_match", "am_magnum"}},
-}
-
 SWEP.BashBase = true
 SWEP.Secondary.BashLength = 45
 SWEP.Secondary.BashDamage = 20
@@ -230,7 +225,8 @@ SWEP.Idle_Smooth = 0.05 --Start an idle this far early into the end of another a
 SWEP.WalkAnimation = {
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
-		["value"] = "walk", -- Number for act, String/Number for sequence
+		["value"] = "walk",
+		["value_empty"] = "walk_empty",
 	} -- What do you think
 }
 
@@ -238,18 +234,22 @@ SWEP.IronAnimation = {
 	["in"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si_in", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_in_empty",
 	}, 
 	["out"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si_out", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_out_empty",
 	}, 
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_empty",
 	}, 
 	["shoot"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "fire_si", -- Number for act, String/Number for sequence
+		["value_is_last"] = "fire_si_empty", 
 		["transition"] = true,
 	},
 }
@@ -258,8 +258,10 @@ SWEP.SprintAnimation = {
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "sprint", -- Number for act, String/Number for sequence
+		["value_empty"] = "sprint_empty",
 	},
 }
+
 
 SWEP.BlowbackEnabled = false --Enable Blowback?
 SWEP.BlowbackVector = Vector(0,-3,0) --Vector to move bone <or root> relative to bone <or view> orientation.
@@ -267,9 +269,33 @@ SWEP.BlowbackCurrentRoot = 0 --Amount of blowback currently, for root
 SWEP.BlowbackCurrent = 0 --Amount of blowback currently, for bones
 --SWEP.BlowbackBoneMods = { "tag_origin", "ValveBipod.Bip01_Spine4" } --Viewmodel bone mods via SWEP Creation Kit
 SWEP.Blowback_Only_Iron = true --Only do blowback on ironsights
-SWEP.Blowback_PistolMode = false --Do we recover from blowback when empty?
+SWEP.Blowback_PistolMode = true --Do we recover from blowback when empty?
 SWEP.Blowback_Shell_Enabled = true --Shoot shells through blowback animations
 SWEP.Blowback_Shell_Effect = "ShellEject"--Which shell effect to use
+
+SWEP.VElements = {
+	["suppressor"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_suppressor_pistol.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -7.7, 2.58), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_laser_m9.mdl", bone = "A_Underbarrel", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "LaserPistol", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(2, 0.5, 0.5), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = false },
+	["suppressor_rydershort"] = { type = "Model", model = "models/weapons/attachments/c_rydershort_fo4usp.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -7.3, 2.58), angle = Angle(0, 90, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+}
+
+SWEP.WElements = {
+	["suppressor"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_suppressor_pistol.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -7.7, 2.58), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+	["laser"] = { type = "Model", model = "models/weapons/tfa_ins2/upgrades/a_laser_m9.mdl", bone = "A_Underbarrel", rel = "", pos = Vector(0, 0, 0), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = true, active = false },
+	["laser_beam"] = { type = "Model", model = "models/tfa/lbeam.mdl", bone = "LaserPistol", rel = "laser", pos = Vector(0, 0, 0), angle = Angle(0, 90, 0), size = Vector(2, 0.5, 0.5), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, active = false },
+	["suppressor_rydershort"] = { type = "Model", model = "models/weapons/attachments/c_rydershort_fo4usp.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -7.3, 2.58), angle = Angle(0, 90, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+}
+
+SWEP.MuzzleAttachmentSilenced = 2
+SWEP.LaserSightModAttachment = 1
+SWEP.LaserSightModAttachmentWorld = 4
+
+SWEP.Attachments = {
+	[1] = {atts = {"fo4_hkusp_skin_tan", "fo4_hkusp_skin_green", "fo4_hkusp_skin_fde", "fo4_hkusp_skin_inox", "fo4_hkusp_skin_cobalt"}},
+	[2] = { offset = { 0, 0 }, atts = { "ins2_br_supp", "fo4_hkusp_ryder_short" }, order = 2 },
+	[3] = { offset = { 0, 0 }, atts = { "am_match", "am_magnum" }, order = 3 },
+}
 
 DEFINE_BASECLASS(SWEP.Base)
 

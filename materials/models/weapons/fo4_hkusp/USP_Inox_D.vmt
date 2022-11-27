@@ -3,25 +3,30 @@
 	"$basetexture" "models\weapons\fo4_hkusp\USP_col_Inox"
 	"$bumpmap" "models\weapons\fo4_hkusp\USP_nrm"
 	"$phongexponenttexture" "models\weapons\fo4_hkusp\USP_exp"
-	//"$phongwarptexture" "models\weapons\fo4_hkusp\phongwarp_steel"
-	"$normalmapalphaenvmapmask" "1" // add env mask from normal map alpha channel additionally
-	"$nocull" "1" // Important for fighting Z stuff
-	"$nodecal" "0" // Enable this incase If the model crash when damage the model. But you won't see bullet holes or less blood decals.
-	"$color2" "[ .9 .9 .9 ]" // You can set .7, .8, .9  with 3 DIGITS for Bright normalize Coloured materials, If it's a gun or dark texture style just use current or .4, .5
-	"$blendtintbybasealpha" "0" // Enable this for env mask on base texture alpha. You can disable it if it's gun or dark texture style once again I said
-	"$basemapalphaphongmask" "0" // add phong mask from base texture alpha channel
-	"$phong" "1" // Important for material shading stuff
-	"$phongboost" "8" // The higher the model brighter, the lower has less shine,reflect and bright
-	"$phongexponent" "15" // Overrides the red channel for $phongexponenttexture
-	"$phongalbedotint" "1" // Important for base texture effect. Disable it if has issue for env mask. REMEMBER, Make sure to adjust Phong setting to reduce since it determine if it's bright or low
-	"$PhongFresnelRanges" "[ .5 .6 1 ]" // X, Y and Z numbers each surface handle for phong
-	"$envmap" "env_cubemap" // Defines an specular reflections
-	"$envmapfresnel" "1" // add gloss stiff effects. You can reduce it but don't set it higher
-	"$envmaptint" "[ .125 .125 .125 ]" // Controls Intensity for reflections. Play around with it
+	
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongtint" "[ .8 .8 .8 ]"
+	"$phongfresnelranges"           "[ .1 .7 1 ]"
+	
+	"$envmap"					"env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" "[ .1 .1 .1 ]"
+	"$normalmapalphaenvmapmask" "1"
+	
 	"$rimlight" "1" // slight Lighting Exposer from environment
 	"$rimlightexponent" "30" // Defines the broader and tightness of highlight, The smaller number is higher $rimlightboost effect, The highest number lower $rimlightboost effect
 	"$rimlightboost" "1" // play around the values high between low
 	"$rimmask" "1" // Important if you add alpha channel from $phongexponenttexture 
+	
+	"Proxies"
+	{
+		"MwEnvMapTint"
+		{
+			"min" "0"
+			"max" "0.15"
+		}
+	}
 }
 // I highly suggest looking into https://developer.valvesoftware.com/wiki/VertexLitGeneric for educating Material shading info
 // Credit Aidenzappering for VMT Template
