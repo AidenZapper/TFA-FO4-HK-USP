@@ -1,4 +1,4 @@
-![alt text](https://imgur.com/a/ldrqjNQ) 
+![alt text](https://imgur.com/a/ldrqjNQ.png) 
 
 # TFA-FO4-HK-USP
  Subleader H&K USP Ported From Fallout 4 To Gmod TFA Base
@@ -9,12 +9,18 @@
 
 ## Feature\Notes:
 * ***Uncompressed High Resolution Normal Map***
-* ***Uncompressed High Resolution Normal Map***
+* ***5 Variants Skins***
+* ***Bashing Animation(Press B)***
+* ***Inspect Animation(Hold R)***
+* ***More Attachments Will Come If It Got Rework***
 
 ## Credits:
-* AidenTheZapperGuy - Porting Animations and Meshes, qc, Original Compile
-* Subleader - Animations, Textures, Meshes
-* Navaro - Sounds
-* Me - Materials, Converting Textures, Lua, Current Compile
+* Horjenger - Tools Provided For Plugin And Some References(Apologize If I look into too much)
+* Dorian399 - Teaching, QC Setup And Help
+* Subleader - Original Animations And Ports
+* Voronin87 - Original Model And Textures
+* Heroic Pie And LittleLight - Custom Skins
+* New World Interactive - Sounds
+* Me - Porting Animations, Meshes, Materials, Converting Textures, Lua And Compile
 
-## Warning. I DO NOT OWN ALL OF THIS ASSETS EXCLUDING C_HANDS CONVERSION. ALL CREDITS EXCLUDING ME ARE RESPECTIVE TO THE AUTHORS
+## Warning. I DO NOT OWN ALL OF THIS ASSETS EXCLUDING C_HANDS CONVERSION. ALL CREDITS EXCLUDING ME ARE RESPECTIVE TO THE AUTHORS ABOVE
