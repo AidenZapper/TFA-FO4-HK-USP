@@ -1,4 +1,4 @@
-![alt text](https://imgur.com/a/ldrqjNQ.png) 
+![alt text](https://i.imgur.com/jOZ9rvJ.png)
 
 # TFA-FO4-HK-USP
  Subleader H&K USP Ported From Fallout 4 To Gmod TFA Base
