@@ -16,6 +16,7 @@
 
 ## Credits:
 * Horjenger - Tools Provided For Plugin And Some References(Apologize If I look into too much)
+* Thatrtxdude- Materials Rework And Help
 * Dorian399 - Teaching, QC Setup And Help
 * Subleader - Original Animations And Ports
 * Voronin87 - Original Model And Textures
