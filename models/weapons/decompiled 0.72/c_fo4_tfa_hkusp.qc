@@ -365,9 +365,26 @@ $sequence "idle" {
 	loop
 }
 
+$sequence "idle_empty" {
+	"c_fo4_tfa_hkusp_anims\idle_empty.smd"
+	activity "ACT_VM_IDLE_EMPTY" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
 $sequence "inspect" {
 	"c_fo4_tfa_hkusp_anims\inspect.smd"
 	activity "ACT_VM_FIDGET" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "inspect_empty" {
+	"c_fo4_tfa_hkusp_anims\inspect_empty.smd"
+	activity "ACT_CROSSBOW_FIDGET_UNLOADED" 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -389,6 +406,14 @@ $sequence "draw" {
 	fps 30
 }
 
+$sequence "draw_empty" {
+	"c_fo4_tfa_hkusp_anims\draw_empty.smd"
+	activity "ACT_VM_DRAW_EMPTY" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "holster" {
 	"c_fo4_tfa_hkusp_anims\holster.smd"
 	activity "ACT_VM_HOLSTER" 1
@@ -397,6 +422,15 @@ $sequence "holster" {
 	fps 30
 }
 
+$sequence "holster_empty" {
+	"c_fo4_tfa_hkusp_anims\holster_empty.smd"
+	activity "ACT_VM_HOLSTER_EMPTY" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+
 $sequence "walk" {
 	"c_fo4_tfa_hkusp_anims\walk.smd"
 	fadein 0.2
@@ -404,8 +438,24 @@ $sequence "walk" {
 	fps 30
 }
 
+$sequence "walk_empty" {
+	"c_fo4_tfa_hkusp_anims\walk_empty.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "sprint" {
 	"c_fo4_tfa_hkusp_anims\sprint.smd"
+	activity "ACT_VM_SPRINT" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "sprint_empty" {
+	"c_fo4_tfa_hkusp_anims\sprint_empty.smd"
+	activity "ACT_VM_SPRINT_EMPTY" 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -414,6 +464,15 @@ $sequence "sprint" {
 $sequence "fire" {
 	"c_fo4_tfa_hkusp_anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "fire_last" {
+	"c_fo4_tfa_hkusp_anims\fire_empty.smd"
+	activity "ACT_VM_PRIMARYATTACK_EMPTY" 1
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -447,9 +506,27 @@ $sequence "fire_si" {
 	fps 30
 }
 
+$sequence "fire_si_empty" {
+	"c_fo4_tfa_hkusp_anims\fire_si_empty.smd"
+	activity "ACT_VM_PRIMARYATTACK_2" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
 $sequence "idle_si" {
 	"c_fo4_tfa_hkusp_anims\idle_si.smd"
 	activity "ACT_VM_IDLE_1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
+$sequence "idle_si_empty" {
+	"c_fo4_tfa_hkusp_anims\idle_si_empty.smd"
+	activity "ACT_VM_IIDLE_EMPTY" 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -473,6 +550,14 @@ $sequence "idle_si_out" {
 $sequence "melee" {
 	"c_fo4_tfa_hkusp_anims\melee.smd"
 	activity "ACT_VM_HITCENTER" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$sequence "melee_empty" {
+	"c_fo4_tfa_hkusp_anims\melee_empty.smd"
+	activity "ACT_VM_MISSCENTER " 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30

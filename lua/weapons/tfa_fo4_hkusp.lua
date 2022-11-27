@@ -225,7 +225,8 @@ SWEP.Idle_Smooth = 0.05 --Start an idle this far early into the end of another a
 SWEP.WalkAnimation = {
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
-		["value"] = "walk", -- Number for act, String/Number for sequence
+		["value"] = "walk",
+		["value_empty"] = "walk_empty",
 	} -- What do you think
 }
 
@@ -233,18 +234,22 @@ SWEP.IronAnimation = {
 	["in"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si_in", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_in_empty",
 	}, 
 	["out"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si_out", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_out_empty",
 	}, 
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "idle_si", -- Number for act, String/Number for sequence
+		["value_empty"] = "idle_si_empty",
 	}, 
 	["shoot"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "fire_si", -- Number for act, String/Number for sequence
+		["value_is_last"] = "fire_si_empty", 
 		["transition"] = true,
 	},
 }
@@ -253,8 +258,10 @@ SWEP.SprintAnimation = {
 	["loop"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
 		["value"] = "sprint", -- Number for act, String/Number for sequence
+		["value_empty"] = "sprint_empty",
 	},
 }
+
 
 SWEP.BlowbackEnabled = false --Enable Blowback?
 SWEP.BlowbackVector = Vector(0,-3,0) --Vector to move bone <or root> relative to bone <or view> orientation.
@@ -262,7 +269,7 @@ SWEP.BlowbackCurrentRoot = 0 --Amount of blowback currently, for root
 SWEP.BlowbackCurrent = 0 --Amount of blowback currently, for bones
 --SWEP.BlowbackBoneMods = { "tag_origin", "ValveBipod.Bip01_Spine4" } --Viewmodel bone mods via SWEP Creation Kit
 SWEP.Blowback_Only_Iron = true --Only do blowback on ironsights
-SWEP.Blowback_PistolMode = false --Do we recover from blowback when empty?
+SWEP.Blowback_PistolMode = true --Do we recover from blowback when empty?
 SWEP.Blowback_Shell_Enabled = true --Shoot shells through blowback animations
 SWEP.Blowback_Shell_Effect = "ShellEject"--Which shell effect to use
 
