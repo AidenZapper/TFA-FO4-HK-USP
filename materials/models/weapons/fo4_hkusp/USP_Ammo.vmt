@@ -16,8 +16,6 @@
 	"$envmap"					"env_cubemap"
 	"$envmapfresnel" "1"
 	"$envmaptint" "[ .035 .035 .035 ]"
-	
-	
 }
 // I highly suggest looking into https://developer.valvesoftware.com/wiki/VertexLitGeneric for educating Material shading info
 // Credit Aidenzappering for VMT Template

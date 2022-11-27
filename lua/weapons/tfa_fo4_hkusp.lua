@@ -1,15 +1,15 @@
 SWEP.Base				= "tfa_fo4_base" --Use "tfa_gun_base" if the weapon does not have a bash/melee animation. Use "tfa_bash_base" if it does.
 SWEP.Category			= "TFA FO4" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..
 SWEP.Manufacturer		= "Heckler & Koch" --Gun Manufactrer (e.g. Heckler and Koch )
-SWEP.Author				= "horjenger, GroveZ, AidenTheZapperGuy, Dorian, Subleader" --Author Tooltip
+SWEP.Author				= "horjenger, GroveZ, AidenTheZapperGuy, Dorian, thatrtxdude, Subleader" --Author Tooltip
 SWEP.Contact			= "" --Contact Info Tooltip
-SWEP.Purpose			= "" --Purpose Tooltip
+SWEP.Purpose			= "A versatile 9x19mm Pistol" --Purpose Tooltip
 SWEP.Instructions		= "" --Instructions Tooltip
 SWEP.Spawnable			= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable		= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair		= true		-- Draw the crosshair?
 SWEP.DrawCrosshairIronSights	= false --Draw the crosshair in ironsights?
-SWEP.PrintName			= "HK USP9"		-- Weapon name (Shown on HUD)
+SWEP.PrintName			= "HK USP-9"		-- Weapon name (Shown on HUD)
 SWEP.Slot				= 1				-- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos			= 65			-- Position in the slot
 SWEP.AutoSwitchTo		= true		-- Auto switch to if we pick it up
@@ -291,6 +291,7 @@ SWEP.MuzzleAttachmentSilenced = 2
 SWEP.LaserSightModAttachment = 1
 SWEP.LaserSightModAttachmentWorld = 4
 
+
 SWEP.Attachments = {
 	[1] = {atts = {"fo4_hkusp_skin_tan", "fo4_hkusp_skin_green", "fo4_hkusp_skin_fde", "fo4_hkusp_skin_inox", "fo4_hkusp_skin_cobalt"}},
 	[2] = { offset = { 0, 0 }, atts = { "ins2_br_supp", "fo4_hkusp_ryder_short" }, order = 2 },
@@ -298,4 +299,3 @@ SWEP.Attachments = {
 }
 
 DEFINE_BASECLASS(SWEP.Base)
-
