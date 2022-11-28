@@ -18,14 +18,6 @@
 	"$rimlightboost" "1" // play around the values high between low
 	"$rimmask" "1" // Important if you add alpha channel from $phongexponenttexture
 
-"Proxies"
-	{
-		"MwEnvMapTint"
-		{
-			"min" "0"
-			"max" "0.15"
-		}
-	}	
 }
 // I highly suggest looking into https://developer.valvesoftware.com/wiki/VertexLitGeneric for educating Material shading info
 // Credit Aidenzappering for VMT Template
