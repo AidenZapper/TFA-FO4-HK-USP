@@ -12,6 +12,11 @@
 	"$envmapfresnel" "1"
 	"$envmaptint" "[ .05 .05 .05 ]"	
 	
+	"$rimlight" "1" // slight Lighting Exposer from environment
+	"$rimlightexponent" "30" // Defines the broader and tightness of highlight, The smaller number is higher $rimlightboost effect, The highest number lower $rimlightboost effect
+	"$rimlightboost" "1" // play around the values high between low
+	"$rimmask" "1" // Important if you add alpha channel from $phongexponenttexture 
+	
 	"Proxies"
 	{
 		"MwEnvMapTint"
