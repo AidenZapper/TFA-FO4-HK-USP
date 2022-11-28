@@ -2,7 +2,10 @@
 {
 	"$basetexture" "models\weapons\fo4_hkusp\USP_col_Inox"
 	"$bumpmap" "models\weapons\fo4_hkusp\USP_nrm"
-	"$phongexponenttexture" "models\weapons\fo4_hkusp\USP_exp"
+	"$phongexponenttexture" "models\weapons\fo4_hkusp\USP_e_Inox"
+	
+	//"$color2" "[ .2 .2 .2 ]"
+	"$blendtintbybasealpha" "1"
 	
 	"$phong" "1"
 	"$phongboost" "2"
@@ -11,14 +14,22 @@
 	
 	"$envmap"					"env_cubemap"
 	"$envmapfresnel" "1"
-	"$envmaptint" "[ .1 .1 .1 ]"
-	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[ .7 .7 .7 ]"
+	
 	
 	"$rimlight" "1" // slight Lighting Exposer from environment
 	"$rimlightexponent" "30" // Defines the broader and tightness of highlight, The smaller number is higher $rimlightboost effect, The highest number lower $rimlightboost effect
 	"$rimlightboost" "1" // play around the values high between low
 	"$rimmask" "1" // Important if you add alpha channel from $phongexponenttexture 
 	
+	"Proxies"
+	{
+		"MwEnvMapTint"
+		{
+			"min" "0.4"
+			"max" "1"
+		}
+	}
 	
 }
 // I highly suggest looking into https://developer.valvesoftware.com/wiki/VertexLitGeneric for educating Material shading info
