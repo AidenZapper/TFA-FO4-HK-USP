@@ -298,7 +298,7 @@ SWEP.LaserSightModAttachmentWorld = 4
 
 SWEP.Attachments = {
 	[1] = {atts = {"fo4_hkusp_skin_tan", "fo4_hkusp_skin_green", "fo4_hkusp_skin_fde", "fo4_hkusp_skin_inox", "fo4_hkusp_skin_cobalt"}},
-	[2] = { offset = { 0, 0 }, atts = { "ins2_br_supp", "fo4_hkusp_ryder_short", "fo4_hkusp_match_comp", "fo4_hkusp_velocity_comp", "fo4_hkusp_osprey" }, order = 2 },
+	[2] = { offset = { 0, 0 }, atts = { "fo4_hkusp_ryder_short", "fo4_hkusp_match_comp", "fo4_hkusp_velocity_comp", "fo4_hkusp_osprey" }, order = 2 },
 	[3] = { offset = { 0, 0 }, atts = { "am_match", "am_magnum" }, order = 3 },
 }
 
