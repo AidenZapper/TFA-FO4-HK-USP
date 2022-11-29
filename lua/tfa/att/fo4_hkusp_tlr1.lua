@@ -19,7 +19,7 @@ ATTACHMENT.WeaponTable = {
 			["active"] = true
 		}
 	},
-	["FlashlightAttachment"] = 1,
+	["FlashlightAttachment"] = 2,
 	["FlashlightDistance"] = 12 * 125,
 	["FlashlightBrightness"] = 8.5,
 	["FlashlightFOV"] = 50,
