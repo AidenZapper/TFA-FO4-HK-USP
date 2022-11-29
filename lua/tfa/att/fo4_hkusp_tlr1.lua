@@ -21,8 +21,8 @@ ATTACHMENT.WeaponTable = {
 	},
 	["FlashlightAttachment"] = 2,
 	["FlashlightDistance"] = 12 * 125,
-	["FlashlightBrightness"] = 8.5,
-	["FlashlightFOV"] = 50,
+	["FlashlightBrightness"] = 10,
+	["FlashlightFOV"] = 30,
 	["FlashlightSoundToggleOn"] = Sound("TFA_INS2.FlashlightOn"),
 	["FlashlightSoundToggleOff"] = Sound("TFA_INS2.FlashlightOff")
 }
