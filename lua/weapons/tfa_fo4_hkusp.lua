@@ -25,6 +25,11 @@ SWEP.MuzzleFlashEffect = "tfa_muzzleflash_pistol" --Change to a string of your m
 SWEP.SmokeParticle = nil --Smoke particle (ID within the PCF), defaults to something else based on holdtype; "" to disable
 SWEP.EjectionSmokeEnabled = true
 
+--[[GROVEZ SCREENSHAKE]]
+SWEP.ScreenShakeForceMultiplier = 0.4
+--SWEP.ScreenShakeSpeedMultiplier = 1.4
+SWEP.ScreenShakeFOVMultiplier = 0.8
+
 SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 
 --[[WEAPON HANDLING]]--
@@ -281,6 +286,7 @@ SWEP.VElements = {
 	["compensator_match"] = { type = "Model", model = "models/weapons/attachments/c_matchcomp_fo4usp.mdl", bone = "Weapon", rel = "", pos = Vector(-0.04, -6.5, 2.58), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
 	["compensator_velocity"] = { type = "Model", model = "models/weapons/attachments/c_velocitycomp_fo4usp.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -6.5, 2.58), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
 	["suppressor_osprey"] = { type = "Model", model = "models/weapons/attachments/c_osprey_fo4usp.mdl", bone = "WeaponOptics1Helper", rel = "", pos = Vector(-0.04, -7.4, 2.6), angle = Angle(0, 90, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
+	["flashlight_tlr1"] = { type = "Model", model = "models/weapons/attachments/c_tlr1_fo4usp.mdl", bone = "Weapon", rel = "", pos = Vector(-0.04, -6, 1.35), angle = Angle(0, 90, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {}, bonemerge = false, active = false },
 }
 
 SWEP.WElements = {
@@ -294,14 +300,15 @@ SWEP.WElements = {
 }
 
 SWEP.MuzzleAttachmentSilenced = 2
-SWEP.LaserSightModAttachment = 1
+SWEP.LaserSightModAttachment = 4
 SWEP.LaserSightModAttachmentWorld = 4
 
 
 SWEP.Attachments = {
 	[1] = {atts = {"fo4_hkusp_skin_tan", "fo4_hkusp_skin_green", "fo4_hkusp_skin_fde", "fo4_hkusp_skin_inox", "fo4_hkusp_skin_cobalt"}},
 	[2] = { offset = { 0, 0 }, atts = { "fo4_hkusp_ryder_short", "fo4_hkusp_match_comp", "fo4_hkusp_velocity_comp", "fo4_hkusp_osprey" }, order = 2 },
-	[3] = { offset = { 0, 0 }, atts = { "am_match", "am_magnum" }, order = 3 },
+	[3] = {atts = {"fo4_hkusp_tlr1"}},
+	[4] = { offset = { 0, 0 }, atts = { "am_match", "am_magnum" }, order = 4 },
 }
 
 DEFINE_BASECLASS(SWEP.Base)
