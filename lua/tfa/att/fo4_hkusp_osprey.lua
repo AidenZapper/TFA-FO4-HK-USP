@@ -9,7 +9,7 @@ TFA.AttachmentColors["+"], "12% less vertical recoil",
 TFA.AttachmentColors["-"], "15% less bullet velocity",
 TFA.AttachmentColors["-"], "12% higher zoom time" 
 }
-ATTACHMENT.Icon = "entities/fo4_hkusp_ryder_short.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
+ATTACHMENT.Icon = "entities/fo4_hkusp_osprey.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
 ATTACHMENT.ShortName = "OSPRY"
 
 ATTACHMENT.WeaponTable = {

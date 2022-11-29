@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\fo4_hkusp\attachments\tlr1_d"
+	"$bumpmap" "models\weapons\fo4_hkusp\attachments\tlr1_n"
+	"$phongexponenttexture" "models\weapons\fo4_hkusp\attachments\tlr1_e"
+	
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongfresnelranges"           "[ .1 .7 1 ]"
+	
+	"$envmap"					"env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" "[ 2 2 2 ]"	
+	
+	"$rimlight" "1" // slight Lighting Exposer from environment
+	"$rimlightexponent" "70" // Defines the broader and tightness of highlight, The smaller number is higher $rimlightboost effect, The highest number lower $rimlightboost effect
+	"$rimlightboost" "0.4" // play around the values high between low
+	"$rimmask" "1" // Important if you add alpha channel from $phongexponenttexture 
+	
+
+}
+

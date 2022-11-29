@@ -6,7 +6,7 @@ ATTACHMENT.Name = "Velocity Compensator"
 ATTACHMENT.Description = { 
 TFA.AttachmentColors["+"], "6% less vertical recoil",
 }
-ATTACHMENT.Icon = "entities/fo4_hkusp_ryder_short.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
+ATTACHMENT.Icon = "entities/fo4_hkusp_velocity_comp1.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
 ATTACHMENT.ShortName = "VLCTY"
 
 ATTACHMENT.WeaponTable = {

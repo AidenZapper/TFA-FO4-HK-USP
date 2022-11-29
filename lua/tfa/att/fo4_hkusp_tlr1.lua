@@ -5,7 +5,7 @@ end
 ATTACHMENT.Name = "TLR-1 Flashlight"
 --ATTACHMENT.ID = "base" -- normally this is just your filename
 
-ATTACHMENT.Icon = "entities/pleasemakeaniconforthisaiden.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
+ATTACHMENT.Icon = "entities/fo4_hkusp_tlr1.png" --Revers to label, please give it an icon though!  This should be the path to a png, like "entities/tfa_ammo_match.png"
 ATTACHMENT.ShortName = "TLR1"
 
 ATTACHMENT.WeaponTable = {
